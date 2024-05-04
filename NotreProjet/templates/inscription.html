@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liste des étudiants</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #ddd;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .button-container button {
+        margin-right: 5px;
+      }
+
+      .add-button {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Liste des étudiants</h1>
+    <button class="add-button">
+      <a href="{% url 'ajouter_etudiant' %}">Ajouter</a>
+    </button>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Promo</th>
+          <th>Filiers</th>
+          <th>Annees</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for etudiant in etudiants %}
+        <tr>
+          <td>{{ etudiant.id }}</td>
+          <td>{{ etudiant.nom }}</td>
+          <td>{{ etudiant.prenom }}</td>
+          <td>{{ etudiant.promo }}</td>
+          <td>{{ etudiant.filiers }}</td>
+          <td>{{ etudiant.annees }}</td>
+
+          <td class="button-container">
+            <button>
+              <a href="{% url 'details_etudiants' etudiant.id %}">Details</a>
+            </button>
+            <button>
+              <a href="{% url 'update_etudiant' etudiant.id %}">Update</a>
+            </button>
+            <form
+              action="{% url 'delete_etudiant' etudiant.id %}"
+              method="post"
+            >
+              {% csrf_token %}
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -105,7 +105,7 @@
       <div class="intro-section" id="home-section">
         <div
           class="slide-1"
-          style="background-image: url('images/hero_1.jpg')"
+          style="background-image: url('{% static 'images/hero_1.jpg' %}')"
           data-stellar-background-ratio="0.5"
         >
           <div class="container">
@@ -196,7 +196,10 @@
               <div class="course bg-white h-100 align-self-stretch">
                 <figure class="m-0">
                   <a href="course-single.html"
-                    ><img src="images/img_1.jpg" alt="Image" class="img-fluid"
+                    ><img
+                      src="{% static 'images/img_1.jpg'%}"
+                      alt="Image"
+                      class="img-fluid"
                   /></a>
                 </figure>
                 <div class="course-inner-text py-4 px-4">
@@ -220,7 +223,10 @@
               <div class="course bg-white h-100 align-self-stretch">
                 <figure class="m-0">
                   <a href="course-single.html"
-                    ><img src="images/img_2.jpg" alt="Image" class="img-fluid"
+                    ><img
+                      src="{% static 'images/img_2.jpg'%}"
+                      alt="Image"
+                      class="img-fluid"
                   /></a>
                 </figure>
                 <div class="course-inner-text py-4 px-4">
@@ -244,7 +250,10 @@
               <div class="course bg-white h-100 align-self-stretch">
                 <figure class="m-0">
                   <a href="course-single.html"
-                    ><img src="images/img_3.jpg" alt="Image" class="img-fluid"
+                    ><img
+                      src="{% static 'images/img_3.jpg'%}"
+                      alt="Image"
+                      class="img-fluid"
                   /></a>
                 </figure>
                 <div class="course-inner-text py-4 px-4">
@@ -268,7 +277,10 @@
               <div class="course bg-white h-100 align-self-stretch">
                 <figure class="m-0">
                   <a href="course-single.html"
-                    ><img src="images/img_4.jpg" alt="Image" class="img-fluid"
+                    ><img
+                      src="{% static 'images/img_4.jpg'%}"
+                      alt="Image"
+                      class="img-fluid"
                   /></a>
                 </figure>
                 <div class="course-inner-text py-4 px-4">
@@ -292,7 +304,10 @@
               <div class="course bg-white h-100 align-self-stretch">
                 <figure class="m-0">
                   <a href="course-single.html"
-                    ><img src="images/img_5.jpg" alt="Image" class="img-fluid"
+                    ><img
+                      src="{% static 'images/img_5.jpg'%}"
+                      alt="Image"
+                      class="img-fluid"
                   /></a>
                 </figure>
                 <div class="course-inner-text py-4 px-4">
@@ -316,7 +331,10 @@
               <div class="course bg-white h-100 align-self-stretch">
                 <figure class="m-0">
                   <a href="course-single.html"
-                    ><img src="images/img_6.jpg" alt="Image" class="img-fluid"
+                    ><img
+                      src="{% static 'images/img_6.jpg'%}"
+                      alt="Image"
+                      class="img-fluid"
                   /></a>
                 </figure>
                 <div class="course-inner-text py-4 px-4">
@@ -367,7 +385,7 @@
           <div class="row mb-5 align-items-center">
             <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
               <img
-                src="images/undraw_youtube_tutorial.svg"
+                src="{% static 'images/undraw_youtube_tutorial.svg'%}"
                 alt="Image"
                 class="img-fluid"
               />
@@ -406,7 +424,7 @@
               data-aos-delay="100"
             >
               <img
-                src="images/undraw_teaching.svg"
+                src="{% static 'images/undraw_teaching.svg'%}"
                 alt="Image"
                 class="img-fluid"
               />
@@ -441,7 +459,7 @@
           <div class="row mb-5 align-items-center">
             <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="100">
               <img
-                src="images/undraw_teacher.svg"
+                src="{% static 'images/undraw_teacher.svg'%}"
                 alt="Image"
                 class="img-fluid"
               />
@@ -501,7 +519,7 @@
             >
               <div class="teacher text-center">
                 <img
-                  src="images/person_1.jpg"
+                  src="{% static 'images/person_1.jpg'%}"
                   alt="Image"
                   class="img-fluid w-50 rounded-circle mx-auto mb-4"
                 />
@@ -524,7 +542,7 @@
             >
               <div class="teacher text-center">
                 <img
-                  src="images/person_2.jpg"
+                  src="{% static 'images/person_2.jpg'%}"
                   alt="Image"
                   class="img-fluid w-50 rounded-circle mx-auto mb-4"
                 />
@@ -547,7 +565,7 @@
             >
               <div class="teacher text-center">
                 <img
-                  src="images/person_3.jpg"
+                  src="{% static 'images/person_3.jpg'%}"
                   alt="Image"
                   class="img-fluid w-50 rounded-circle mx-auto mb-4"
                 />
@@ -568,13 +586,13 @@
 
       <div
         class="site-section bg-image overlay"
-        style="background-image: url('images/hero_1.jpg')"
+        style="background-image: url('{% static 'images/hero_1.jpg'%}')"
       >
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-md-8 text-center testimony">
               <img
-                src="images/person_4.jpg"
+                src="{% static 'images/person_4.jpg'%}"
                 alt="Image"
                 class="img-fluid w-25 mb-4 rounded-circle"
               />
@@ -595,10 +613,10 @@
       <div class="site-section pb-0">
         <div class="future-blobs">
           <div class="blob_2">
-            <img src="images/blob_2.svg" alt="Image" />
+            <img src="{% static 'images/blob_2.svg'%}" alt="Image" />
           </div>
           <div class="blob_1">
-            <img src="images/blob_1.svg" alt="Image" />
+            <img src="{% static 'images/blob_1.svg'%}" alt="Image" />
           </div>
         </div>
         <div class="container">
@@ -693,7 +711,7 @@
               data-aos-delay="200"
             >
               <img
-                src="images/person_transparent.png"
+                src="{% static 'images/person_transparent.png'%}"
                 alt="Image"
                 class="img-fluid"
               />
@@ -834,7 +852,9 @@
                   </script>
                   All rights reserved | This template is made with
                   <i class="icon-heart" aria-hidden="true"></i> by
-                  <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  <a href="{% static 'https://colorlib.com'%}" target="_blank"
+                    >Colorlib</a
+                  >
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
               </div>
